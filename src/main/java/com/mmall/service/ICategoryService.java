@@ -13,6 +13,6 @@ public interface ICategoryService {
 
     ServerResponse<List<Category>> getChildrenParallelCategory(Integer parentId);
 
-    ServerResponse getDeepCategory(Integer categoryId);
+    ServerResponse<List<Integer>> getDeepCategory(Integer categoryId);
 
 }
